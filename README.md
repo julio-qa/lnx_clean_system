@@ -46,6 +46,8 @@ Para uma limpeza automatizada, configure o script com `systemd`:
    After=network.target
 
    [Service]
+   StandardOutput=journal
+   StandardError=journal
    Type=oneshot
    User=SEU_USUARIO
    WorkingDirectory=/home/SEU_USUARIO
